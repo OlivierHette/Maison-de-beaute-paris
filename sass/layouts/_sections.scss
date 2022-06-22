@@ -1,3 +1,7 @@
+section {
+    // padding: 0 20px;
+}
+
 .hero {
     padding-top: 70px;
     background: url('../../assets/images/background/bg_small/bg_small.webp');
@@ -9,4 +13,26 @@
     align-items: flex-end;
     justify-content: center;
     // flex-direction: column-reverse;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    &__container {
+        &-title {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--man {
+            background: $secondary-color;
+            color: $primary-color;
+        }
+    }
 }

@@ -1,0 +1,49 @@
+.card {
+    margin: 50px 0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    &__header {
+        height: 160px;
+        min-width: 260px;
+        display: flex;
+        align-items: flex-end;
+        font-size: 1.4rem;
+        padding: 20px;
+        font-weight: bold;
+
+        &--woman {
+            background: url('../../assets/images/bg_card_woman.jpg') no-repeat center/cover;
+            color: $secondary-color;
+        }
+        &--man {
+            background: url('../../assets/images/bg_card_man.jpg') no-repeat center/cover;
+            color: $primary-color;
+        }
+    }
+
+    &__body {
+        padding: 20px;
+        line-height: 1.8rem;
+        &--woman {
+            background: #FFE2C8;
+        }
+        &--man {
+            background: $primary-color;
+        }
+    }
+
+    &__list {
+        &-items {
+            transition: all 400ms ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                margin-left: 20px;
+            }
+        }
+        &-links {
+            font-weight: bold;
+            &--woman {
+                color: $primary-color;
+            }
+        }
+    }
+}
