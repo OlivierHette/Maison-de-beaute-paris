@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    color: $tertiary-color;
+    font-size: 4.2rem;
+}

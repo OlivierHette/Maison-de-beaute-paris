@@ -1,0 +1,14 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: $header-color;
+    padding: 0 20px;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 10px 20px;
+}
