@@ -34,3 +34,11 @@
         }
     }
 }
+
+.gift-card {
+    &__container {
+        background: url('../../assets/images/bg_gift_small.jpg') no-repeat center/cover;
+        height: 425px;
+        cursor: pointer;
+    }
+}

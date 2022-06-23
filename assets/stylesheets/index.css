@@ -384,4 +384,10 @@ header {
   color: #333333;
 }
 
+.gift-card__container {
+  background: url("../../assets/images/bg_gift_small.jpg") no-repeat center/cover;
+  height: 425px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.css.map */
