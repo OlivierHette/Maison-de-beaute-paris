@@ -1,0 +1,11 @@
+.btn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 25px;
+    font-weight: bold;
+    &--cta {
+        color: $tertiary-color;
+        border: 3px solid $tertiary-color;
+    }
+}

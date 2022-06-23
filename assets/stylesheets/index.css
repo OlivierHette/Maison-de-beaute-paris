@@ -228,6 +228,9 @@ h2 {
   margin: 50px 0;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
 }
+.card--woman {
+  margin-top: 0;
+}
 .card__header {
   height: 160px;
   min-width: 260px;
@@ -269,6 +272,68 @@ h2 {
   color: #333333;
 }
 
+.slider {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider > div {
+  scroll-snap-align: start;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100vw;
+  flex-shrink: 0;
+  height: 100%;
+  color: #f0f0f0;
+  padding: 40px 20px;
+}
+.slide__header {
+  display: flex;
+  justify-content: space-between;
+}
+.slide__price {
+  display: flex;
+  flex-direction: column;
+}
+.slide__price-actual {
+  font-size: 1.2rem;
+}
+.slide__price-actual--promo {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+.slide__body {
+  align-self: center;
+}
+.slide__footer {
+  align-self: flex-end;
+}
+
+#slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/bg_slider.jpg") no-repeat center/cover;
+  height: 280px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 25px;
+  font-weight: bold;
+}
+.btn--cta {
+  color: #FFD149;
+  border: 3px solid #FFD149;
+}
+
 /* Layout */
 header {
   position: fixed;
@@ -283,6 +348,14 @@ header {
   position: absolute;
   right: 0;
   margin: 10px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+}
+.section-title--promo {
+  color: #FFD149;
 }
 
 .hero {
@@ -305,11 +378,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.services__container-title {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 0;
 }
 .services__container--man {
   background: #f0f0f0;

@@ -1,6 +1,10 @@
 .card {
     margin: 50px 0;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+
+    &--woman {
+        margin-top: 0;
+    }
     &__header {
         height: 160px;
         min-width: 260px;
