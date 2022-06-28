@@ -1,0 +1,36 @@
+.gallery {
+    &__header {
+        padding: 0 20px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        
+        &-links {
+            transition: all 400ms ease-in-out;
+
+            &:hover {
+                color: $tertiary-color;
+            }
+        }
+    }
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 0;
+        &-items {
+
+            & > img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.active {
+    &-links {
+        color: $tertiary-color;
+        transition: all 400ms ease-in-out;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+}

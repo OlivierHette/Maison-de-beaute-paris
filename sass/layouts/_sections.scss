@@ -1,8 +1,11 @@
 .section-title {
     text-align: center;
-    margin: 40px 0;
+    padding: 40px 0;
 
-    &--promo {
+    &--primary {
+        color: $primary-color;
+    }
+    &--tertiary {
         color: $tertiary-color;
     }
 }
@@ -41,4 +44,19 @@
         height: 425px;
         cursor: pointer;
     }
+}
+
+.brands {
+    background: $secondary-color;
+}
+
+.gallery {
+    // background: $primary-color;
+}
+
+.feedback {
+    background: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

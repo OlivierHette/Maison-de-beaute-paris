@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:wght@400;700&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
@@ -73,7 +74,6 @@ h1 {
 h2 {
   font-size: 2.2rem;
   color: #f0f0f0;
-  margin: 30px 0;
 }
 
 /* Components */
@@ -334,6 +334,93 @@ h2 {
   border: 3px solid #FFD149;
 }
 
+.brands__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.brands__container-items {
+  filter: grayscale(100);
+  transition: 400ms all ease-in-out;
+}
+.brands__container-items:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.gallery__header {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__header-links {
+  transition: all 400ms ease-in-out;
+}
+.gallery__header-links:hover {
+  color: #FFD149;
+}
+.gallery__body {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+.gallery__body-items > img {
+  height: 100%;
+}
+
+.active-links {
+  color: #FFD149;
+  transition: all 400ms ease-in-out;
+}
+.active-links:hover {
+  color: #f0f0f0;
+}
+
+.feedback__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 340px;
+  margin: 0 20px 60px 20px;
+}
+.feedback__container-text {
+  display: flex;
+  text-align: center;
+  color: #333333;
+}
+.feedback__container-text::before, .feedback__container-text::after {
+  font-size: 5rem;
+  max-height: 30px;
+}
+.feedback__container-text::before {
+  content: "“";
+  position: relative;
+  top: -25px;
+}
+.feedback__container-text::after {
+  content: "”";
+  position: relative;
+  bottom: -30px;
+}
+.feedback__container > figcaption {
+  margin: 5px 40px;
+  font-size: 0.8rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+
 /* Layout */
 header {
   position: fixed;
@@ -341,6 +428,7 @@ header {
   height: 70px;
   background: #262626;
   padding: 0 20px;
+  z-index: 1;
 }
 
 .logo {
@@ -352,9 +440,12 @@ header {
 
 .section-title {
   text-align: center;
-  margin: 40px 0;
+  padding: 40px 0;
 }
-.section-title--promo {
+.section-title--primary {
+  color: #333333;
+}
+.section-title--tertiary {
   color: #FFD149;
 }
 
@@ -388,6 +479,17 @@ header {
   background: url("../../assets/images/bg_gift_small.jpg") no-repeat center/cover;
   height: 425px;
   cursor: pointer;
+}
+
+.brands {
+  background: #f0f0f0;
+}
+
+.feedback {
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

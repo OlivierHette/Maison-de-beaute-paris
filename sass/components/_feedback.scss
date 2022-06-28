@@ -1,0 +1,33 @@
+.feedback__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 340px;
+    margin: 0 20px 60px 20px;
+    &-text {
+        display: flex;
+        text-align: center;
+        color: $primary-color;
+
+        &::before, &::after {
+            font-size: 5rem;
+            max-height: 30px;
+        }
+        &::before {
+            content: '\201C';
+            position: relative;
+            top: -25px;
+        }
+        &::after {
+            content: '\201D';
+            position: relative;
+            bottom: -30px;
+        }
+    }
+
+    & > figcaption {
+        margin: 5px 40px;
+        font-size: 0.8rem;
+
+    }
+}
