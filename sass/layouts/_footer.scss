@@ -1,4 +1,6 @@
 footer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, $primary-color 70%),
+    url('../../assets/images/bg_contact.png') no-repeat center top/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,4 +10,36 @@ footer {
     width: 260px;
     height: 260px;
     border-radius: 50%;
+    margin-top: 60px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4rem;
+    margin: 40px 0;
+
+    &-title {
+        font-weight: bold;
+        color: $secondary-color;
+        margin-bottom: 5px;
+    }
+    &-legal-mention {
+        align-self: center;
+    }
+    &-network {
+        display: flex;
+        gap: 20px;
+        &-icons {
+            height: 30px;
+            width: 30px;
+            margin: 10px 0;
+            fill: $secondary-color;
+            transition: transform 300ms ease-in-out, fill 450ms ease-in-out;
+            &:hover {
+                fill: $tertiary-color;
+                transform: scale(1.1);
+            }
+        }
+    }
 }
