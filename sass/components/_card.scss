@@ -1,6 +1,12 @@
 .card {
     margin: 50px 0;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 400ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     &--woman {
         margin-top: 0;
@@ -10,17 +16,25 @@
         min-width: 260px;
         display: flex;
         align-items: flex-end;
-        font-size: 1.4rem;
         padding: 20px;
-        font-weight: bold;
 
         &--woman {
             background: url('../../assets/images/bg_card_woman.jpg') no-repeat center/cover;
-            color: $secondary-color;
         }
         &--man {
             background: url('../../assets/images/bg_card_man.jpg') no-repeat center/cover;
-            color: $primary-color;
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 1.4rem;
+
+            &--woman {
+                color: $secondary-color;
+            }
+            &--man {
+                color: $primary-color;
+            }
         }
     }
 

@@ -1,6 +1,7 @@
 @import './bases/reset';
 /* Variables */
 @import './utils/variables';
+@import './utils/animations';
 
 /* Bases */
 @import './bases/bases';
@@ -14,7 +15,9 @@
 @import './components/brands';
 @import './components/gallery';
 @import './components/feedback';
+@import './components/modals';
 @import './layouts/footer';
+@import './components/accordion';
 
 /* Layout */
 @import './layouts/header';

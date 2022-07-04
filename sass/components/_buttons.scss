@@ -4,8 +4,15 @@
     height: 40px;
     padding: 0 25px;
     font-weight: bold;
+    
     &--cta {
         color: $tertiary-color;
         border: 3px solid $tertiary-color;
+    }
+
+    &--accordion {
+        color: #D1820C;
+        border: 3px solid #D1820C;
+        min-height: 40px;
     }
 }

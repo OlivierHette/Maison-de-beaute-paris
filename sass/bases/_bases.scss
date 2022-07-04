@@ -6,3 +6,27 @@ a {
     text-decoration: none;
     color: $secondary-color;
 }
+
+.icons {
+    height: 30px;
+    width: 30px;
+    transition: transform 300ms ease-in-out, fill 450ms ease-in-out;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+    &--network {
+        fill: $secondary-color;
+        margin: 10px 0;
+        &:hover {
+            fill: $tertiary-color;
+        }
+    }
+
+    &--accordion {
+        fill: $primary-color;
+        height: 13px;
+        width: 13px;
+    }
+}

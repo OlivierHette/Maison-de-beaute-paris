@@ -39,6 +39,8 @@
 }
 
 .gift-card {
+    height: 440px;
+    overflow: hidden;
     &__container {
         background: url('../../assets/images/bg_gift_small.jpg') no-repeat center/cover;
         height: 425px;

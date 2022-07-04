@@ -7,6 +7,7 @@
     <meta name="description" content="Maison de beauté... complété">
 
     <link rel="stylesheet" href="./assets/stylesheets/index.css">
+    <script src="./assets/js/index.js" defer></script>
 
     <title>Maison de beauté</title>
 </head>
@@ -21,7 +22,7 @@
                     <div>
                         <ul>
                             <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Prix &amp; service</a></li>
+                            <li><a href="#">Prix &amp; services</a></li>
                             <li><a href="#">Promotion</a></li>
                             <li><a href="#">Galerie</a></li>
                             <li><a href="#">Avis</a></li>
@@ -36,6 +37,162 @@
             <img src="./assets/images/logo.png" alt="Logo Maison de beauté" width="50" height="50">
         </div>
     </header>
+    <!-- Peut être créer le html du modal au niveau du JS à la place 
+    de faire du display: none; ? -->
+    <div class="modal modal--woman">
+        <div class="modal__header">
+            <h3 class="card__header-title card__header-title--woman">Pour <br> Femme</h3>
+            <div class="modal__close">
+                <span class="modal__close-cross">&times;</span>
+            </div>
+        </div>
+        <h4 class="modal-title">Préstation et tarifs</h4>
+
+        <div class="modal__body">
+            <div class="modal__body__services">
+                <h5 class="modal__body__services-title">Autour de l'ongle</h5>
+
+                <div class="modal__body__services-items">
+                    <div class="modal__body__services-info">
+                        <div class="modal__body__services-text">
+                            <h5>Manucure complète</h5>
+                            <span>Classique Green/semi permanent</span>
+                        </div>
+                        <span class="modal__body__services-prices">35€/45€</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <img class="accordion-img" src="./assets/images/posse-vernis.jpg" alt="ongles en cours de manucure" width="80" height="80">
+                    <div class="accordion-info">
+                        <a class="btn btn--accordion" href="#">
+                            <span>Commandez</span>
+                        </a>
+                        <div>
+                            <svg class="icons icons--accordion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C201.7 512 151.2 495 109.7 466.1C95.2 455.1 91.64 436 101.8 421.5C111.9 407 131.8 403.5 146.3 413.6C177.4 435.3 215.2 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64C202.1 64 155 85.46 120.2 120.2L151 151C166.1 166.1 155.4 192 134.1 192H24C10.75 192 0 181.3 0 168V57.94C0 36.56 25.85 25.85 40.97 40.97L74.98 74.98C121.3 28.69 185.3 0 255.1 0L256 0zM256 128C269.3 128 280 138.7 280 152V246.1L344.1 311C354.3 320.4 354.3 335.6 344.1 344.1C335.6 354.3 320.4 354.3 311 344.1L239 272.1C234.5 268.5 232 262.4 232 256V152C232 138.7 242.7 128 256 128V128z"/></svg>
+                            <span>50 min - 1h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__body__services-items">
+                    <div class="modal__body__services-info">
+                        <div class="modal__body__services-text">
+                            <h5>Manucure complète</h5>
+                            <span>Classique Green/semi permanent</span>
+                        </div>
+                        <span class="modal__body__services-prices">35€/45€</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <img class="accordion-img" src="./assets/images/posse-vernis.jpg" alt="ongles en cours de manucure" width="80" height="80">
+                    <div class="accordion-info">
+                        <a class="btn btn--accordion" href="#">
+                            <span>Commandez</span>
+                        </a>
+                        <div>
+                            <svg class="icons icons--accordion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C201.7 512 151.2 495 109.7 466.1C95.2 455.1 91.64 436 101.8 421.5C111.9 407 131.8 403.5 146.3 413.6C177.4 435.3 215.2 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64C202.1 64 155 85.46 120.2 120.2L151 151C166.1 166.1 155.4 192 134.1 192H24C10.75 192 0 181.3 0 168V57.94C0 36.56 25.85 25.85 40.97 40.97L74.98 74.98C121.3 28.69 185.3 0 255.1 0L256 0zM256 128C269.3 128 280 138.7 280 152V246.1L344.1 311C354.3 320.4 354.3 335.6 344.1 344.1C335.6 354.3 320.4 354.3 311 344.1L239 272.1C234.5 268.5 232 262.4 232 256V152C232 138.7 242.7 128 256 128V128z"/></svg>
+                            <span>50 min - 1h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__body__services-items">
+                    <div class="modal__body__services-info">
+                        <div class="modal__body__services-text">
+                            <h5>Manucure complète</h5>
+                            <span>Classique Green/semi permanent</span>
+                        </div>
+                        <span class="modal__body__services-prices">35€/45€</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <img class="accordion-img" src="./assets/images/posse-vernis.jpg" alt="ongles en cours de manucure" width="80" height="80">
+                    <div class="accordion-info">
+                        <a class="btn btn--accordion" href="#">
+                            <span>Commandez</span>
+                        </a>
+                        <div>
+                            <svg class="icons icons--accordion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C201.7 512 151.2 495 109.7 466.1C95.2 455.1 91.64 436 101.8 421.5C111.9 407 131.8 403.5 146.3 413.6C177.4 435.3 215.2 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64C202.1 64 155 85.46 120.2 120.2L151 151C166.1 166.1 155.4 192 134.1 192H24C10.75 192 0 181.3 0 168V57.94C0 36.56 25.85 25.85 40.97 40.97L74.98 74.98C121.3 28.69 185.3 0 255.1 0L256 0zM256 128C269.3 128 280 138.7 280 152V246.1L344.1 311C354.3 320.4 354.3 335.6 344.1 344.1C335.6 354.3 320.4 354.3 311 344.1L239 272.1C234.5 268.5 232 262.4 232 256V152C232 138.7 242.7 128 256 128V128z"/></svg>
+                            <span>50 min - 1h</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal__body__services">
+                <h5 class="modal__body__services-title">Autour de l'ongle</h5>
+
+                <div class="modal__body__services-items">
+                    <div class="modal__body__services-info">
+                        <div class="modal__body__services-text">
+                            <h5>Manucure complète</h5>
+                            <span>Classique Green/semi permanent</span>
+                        </div>
+                        <span class="modal__body__services-prices">35€/45€</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <img class="accordion-img" src="./assets/images/posse-vernis.jpg" alt="ongles en cours de manucure" width="80" height="80">
+                    <div class="accordion-info">
+                        <a class="btn btn--accordion" href="#">
+                            <span>Commandez</span>
+                        </a>
+                        <div>
+                            <svg class="icons icons--accordion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C201.7 512 151.2 495 109.7 466.1C95.2 455.1 91.64 436 101.8 421.5C111.9 407 131.8 403.5 146.3 413.6C177.4 435.3 215.2 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64C202.1 64 155 85.46 120.2 120.2L151 151C166.1 166.1 155.4 192 134.1 192H24C10.75 192 0 181.3 0 168V57.94C0 36.56 25.85 25.85 40.97 40.97L74.98 74.98C121.3 28.69 185.3 0 255.1 0L256 0zM256 128C269.3 128 280 138.7 280 152V246.1L344.1 311C354.3 320.4 354.3 335.6 344.1 344.1C335.6 354.3 320.4 354.3 311 344.1L239 272.1C234.5 268.5 232 262.4 232 256V152C232 138.7 242.7 128 256 128V128z"/></svg>
+                            <span>50 min - 1h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__body__services-items">
+                    <div class="modal__body__services-info">
+                        <div class="modal__body__services-text">
+                            <h5>Manucure complète</h5>
+                            <span>Classique Green/semi permanent</span>
+                        </div>
+                        <span class="modal__body__services-prices">35€/45€</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <img class="accordion-img" src="./assets/images/posse-vernis.jpg" alt="ongles en cours de manucure" width="80" height="80">
+                    <div class="accordion-info">
+                        <a class="btn btn--accordion" href="#">
+                            <span>Commandez</span>
+                        </a>
+                        <div>
+                            <svg class="icons icons--accordion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C201.7 512 151.2 495 109.7 466.1C95.2 455.1 91.64 436 101.8 421.5C111.9 407 131.8 403.5 146.3 413.6C177.4 435.3 215.2 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64C202.1 64 155 85.46 120.2 120.2L151 151C166.1 166.1 155.4 192 134.1 192H24C10.75 192 0 181.3 0 168V57.94C0 36.56 25.85 25.85 40.97 40.97L74.98 74.98C121.3 28.69 185.3 0 255.1 0L256 0zM256 128C269.3 128 280 138.7 280 152V246.1L344.1 311C354.3 320.4 354.3 335.6 344.1 344.1C335.6 354.3 320.4 354.3 311 344.1L239 272.1C234.5 268.5 232 262.4 232 256V152C232 138.7 242.7 128 256 128V128z"/></svg>
+                            <span>50 min - 1h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__body__services-items">
+                    <div class="modal__body__services-info">
+                        <div class="modal__body__services-text">
+                            <h5>Manucure complète</h5>
+                            <span>Classique Green/semi permanent</span>
+                        </div>
+                        <span class="modal__body__services-prices">35€/45€</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <img class="accordion-img" src="./assets/images/posse-vernis.jpg" alt="ongles en cours de manucure" width="80" height="80">
+                    <div class="accordion-info">
+                        <a class="btn btn--accordion" href="#">
+                            <span>Commandez</span>
+                        </a>
+                        <div>
+                            <svg class="icons icons--accordion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C201.7 512 151.2 495 109.7 466.1C95.2 455.1 91.64 436 101.8 421.5C111.9 407 131.8 403.5 146.3 413.6C177.4 435.3 215.2 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64C202.1 64 155 85.46 120.2 120.2L151 151C166.1 166.1 155.4 192 134.1 192H24C10.75 192 0 181.3 0 168V57.94C0 36.56 25.85 25.85 40.97 40.97L74.98 74.98C121.3 28.69 185.3 0 255.1 0L256 0zM256 128C269.3 128 280 138.7 280 152V246.1L344.1 311C354.3 320.4 354.3 335.6 344.1 344.1C335.6 354.3 320.4 354.3 311 344.1L239 272.1C234.5 268.5 232 262.4 232 256V152C232 138.7 242.7 128 256 128V128z"/></svg>
+                            <span>50 min - 1h</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <section class="hero">
         <h1 class="hero-title">Maison <br>de <br> <u>beauté</u></h1>
@@ -46,7 +203,7 @@
             <h2 class="section-title">Nos Services</h2>
             <div class="card card--woman">
                 <div class="card__header card__header--woman">
-                    <h3 class="card__header-title card__header-title--women">Pour <br>Femmes</h3>
+                    <h3 class="card__header-title card__header-title--woman">Pour <br>Femmes</h3>
                 </div>
                 <div class="card__body card__body--woman">
                     <ul class="services__list">
@@ -108,9 +265,9 @@
                     </p>
                 </div>
                 <div class="slide__footer">
-                    <div class="btn btn--cta">
+                    <a class="btn btn--cta btn--shakes" href="#">
                         <span>Commandez</span>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="slide" id="slide-1">
@@ -184,7 +341,9 @@
     </section>
 
     <section class="gift-card">
-        <h2 class="section-title">Carte Cadeau</h2>
+        <div class="gift-card__header">
+            <h2 class="section-title">Carte Cadeau</h2>
+        </div>
         <div class="gift-card__container"></div>
     </section>
 
@@ -289,7 +448,7 @@
     
     <footer>
         <h2 class="section-title section-title--tertiary">Contact</h2>
-        <iframe title="Emplacement de maison de beauté" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.0822597480637!2d2.344714951394305!3d48.83756961002463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671eb14427519%3A0x6f0ae101a3620b39!2s46%20Bd%20de%20Port-Royal%2C%2075005%20Paris!5e0!3m2!1sfr!2sfr!4v1656445035705!5m2!1sfr!2sfr" width="260" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe title="Emplacement de maison de beauté" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.0822597480637!2d2.344714951394305!3d48.83756961002463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671eb14427519%3A0x6f0ae101a3620b39!2s46%20Bd%20de%20Port-Royal%2C%2075005%20Paris!5e0!3m2!1sfr!2sfr!4v1656445035705!5m2!1sfr!2sfr" width="260" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     
         <div class="info">
             <h3 class="info-title">Maison de beauté</h3>
@@ -298,14 +457,16 @@
             <a href="mailto:contact@maison-de-beaute.paris">E-mail: contact@maison-de-beaute.paris</a>
             <div class="info-network">
                 <a href="#">
-                    <svg class="info-network-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    <svg class="icons icons--network" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                 </a>
                 <a href="#">
-                    <!-- <svg class="info-network-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg> -->
-                    <svg class="info-network-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                    <svg class="icons icons--network" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+                    <!-- <svg class="info-network-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg> -->
                 </a>
             </div>
-            <div class="logo"></div>
+            <a href="#" class="info-logo">
+                <img src="./assets/images/logo.png" alt="logo pied de page maison de beauté" width="30" height="30">
+            </a>
             <a href="#" class="info-legal-mention">Mention légales</a>
         </div>
     </footer>
