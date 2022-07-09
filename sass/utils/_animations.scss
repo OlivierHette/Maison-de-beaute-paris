@@ -2,20 +2,32 @@
     0% {
         transform: rotateZ(0);
     }
-    25% {
+    1% {
         transform: rotateZ(-3deg);
     }
-    75% {
+    2% {
         transform: rotateZ(3deg);
     }
-    100% {
+    3% {
+        transform: rotateZ(0);
+    }
+    4% {
+        transform: rotateZ(-3deg);
+    }
+    5% {
+        transform: rotateZ(3deg);
+    }
+    6% {
         transform: rotateZ(0);
     }
 }
 
 .btn {
     &--shakes {
-        animation: shakes 0.25s ease-in-out 5s infinite normal forwards;
+        animation: shakes 5s ease-in-out .5s infinite normal forwards;
+        &:hover {
+            animation-iteration-count: initial;
+        }
     }
 }
 

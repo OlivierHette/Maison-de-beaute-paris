@@ -7,11 +7,20 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background: #C9B09A;
     
+    &--woman {
+        background: #C9B09A;
+    }
+
+    &--man {
+        background: $secondary-color;
+    }
+
+    // &::-webkit-scrollbar {
+    //     display: none;
+    // }
+
     &__header {
-        background: linear-gradient(180deg, rgba(201, 176, 154, 0.21) 0%, #C9B09A 90%), 
-        url('../../assets/images/bg_card_woman.jpg') no-repeat center/cover;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -19,7 +28,17 @@
         padding: 20px 20px;
         position: sticky;
         top: 0;
-        box-shadow: 0px 50px 35px 0px #c9b09a;
+        
+        &--woman {
+            background: linear-gradient(180deg, rgba(201, 176, 154, 0.21) 0%, #C9B09A 90%), 
+            url('../../assets/images/bg_card_woman.jpg') no-repeat center/cover;
+            box-shadow: 0px 50px 35px 0px #c9b09a;
+        }
+        &--man {
+            background: linear-gradient(180deg, rgba(240, 240, 240, 0.21) 0%, $secondary-color 80%), 
+            url('../../assets/images/bg_card_man.jpg') no-repeat center/cover;
+            box-shadow: 0px 50px 35px 0px $secondary-color;
+        }
     }
 
     &__close {
@@ -66,6 +85,10 @@
                 font-size: 1.2rem;
                 color: $secondary-color;
                 margin: 10px 20px;
+
+                &--man {
+                    color: $primary-color;
+                }
             }
             &-items {
                 display: flex;
@@ -76,6 +99,10 @@
                 cursor: pointer;
                 &:last-child {
                     border-bottom: none;
+                }
+
+                &--man {
+                    background: darken($secondary-color, $amount: 10);
                 }
             }
             &-text {

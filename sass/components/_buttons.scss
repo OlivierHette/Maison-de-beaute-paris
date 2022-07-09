@@ -4,6 +4,7 @@
     height: 40px;
     padding: 0 25px;
     font-weight: bold;
+    transition: all 400ms ease-in-out;
     
     &--cta {
         color: $tertiary-color;
@@ -14,5 +15,11 @@
         color: #D1820C;
         border: 3px solid #D1820C;
         min-height: 40px;
+
+        &-man {
+            color: $primary-color;
+            border: 3px solid $primary-color;
+            min-height: 40px;
+        }
     }
 }

@@ -13,7 +13,7 @@
         }
     }
     &__body {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: center;
         min-width: 320px;
@@ -21,11 +21,18 @@
         // max-width: 400px;
         z-index: 0;
         &-items {
-
+            overflow: hidden;
             & > img {
                 height: 100%;
+                transition: all 400ms ease-in-out;
+                &:hover {
+                    transform: scale(1.4);
+                }
             }
         }
+    }
+    &-active {
+        display: flex;
     }
 }
 
